@@ -1,0 +1,22 @@
+<ion-view view-title="Global Chat">
+
+  <ion-nav-bar class="bar-assertive">
+      <ion-nav-back-button class="button button-icon button-clear ion-chevron-left">
+      </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="msg in messages">
+          {{msg.username}} : {{msg.message}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
+    <label class="item-input-wrapper">
+          <input type="text" placeholder="Type your message" ng-model="message" />
+        </label>
+        <button class="button button-clear" ng-click="sendMessage(message)">
+          Send
+        </button>
+  </ion-footer-bar>
+</ion-view>

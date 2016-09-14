@@ -1,0 +1,61 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="max-width:1200px">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" class="leftcontent">
+    <ion-content scroll="false">
+      <ion-item class="item item-avatar" menu-close ui-sref='app.profile'>
+        <img src="img/avatar/{{UserData.profilePic}}">
+        <h2>{{UserData.firstName}} {{UserData.lastName}}</h2>
+      </ion-item>
+        <ion-item class="item-icon-left" menu-close ui-sref='app.playlists'>
+          <i class="icon ion-home"></i>
+          Find Events
+        </ion-item>
+        <ion-item class="item-icon-left" menu-close ui-sref='app.messages'>
+          <i class="icon ion-chatbox-working"></i>
+          Messages
+          <span class="badge badge-assertive">2</span>
+        </ion-item>
+        <ion-item class="item-icon-left" menu-close ui-sref='app.settings'>
+          <i class="icon ion-settings"></i>
+          Settings
+        </ion-item>
+        <ion-item class="item-icon-left" menu-close href="#">
+          <i class="icon ion-log-out"></i>
+          Logout
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+  <ion-side-menu side="right" scroll="false">
+    <ion-header-bar class="bar-assertive">
+      <h1 class="title">Filter</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ng-click="nothing()">
+          By Date
+        </ion-item>
+        <ion-item menu-close ng-click="nothing()">
+          By Location
+        </ion-item>
+        <ion-item menu-close ng-click="nothing()">
+          By the amount of Girls
+        </ion-item>
+        <ion-item menu-close ng-click="nothing()">
+          By how much you care
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>

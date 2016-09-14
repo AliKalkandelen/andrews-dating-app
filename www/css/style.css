@@ -1,0 +1,20 @@
+/* Empty. Add your own CSS if you like */
+.signupcontent{
+  background-image: url("../img/beach.jpg");
+}
+.signupcontent button{
+  opacity: 0.9;
+}
+
+.signupcontent h1{
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  font-family: cursive;
+}
+
+.signupcontent .push{
+  position: absolute;
+  bottom: 10px;
+  padding: 15px;
+}

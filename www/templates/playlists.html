@@ -1,0 +1,36 @@
+<ion-view view-title="Find">
+  <ion-nav-buttons side="right">
+    <button class="button button-clear ion-funnel" menu-toggle="right">
+    </button>
+  </ion-nav-buttons>
+  <ion-content >
+    <ion-list >
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" ng-model="searchbox.title">
+      </label>
+      <ion-item ng-repeat="event in events | filter:searchbox">
+        <div class="list card" ng-click="nothing()">
+
+          <div class="item">
+            <h1>{{event.title}}</h1>
+            <p>{{event.date}}</p>
+          </div>
+
+          <div class="item item-image">
+            <img src={{event.img}}>
+          </div>
+
+          <a class="item item-icon-left assertive">
+            <i class="icon ion-information-circled"></i>
+            More Details
+          </a>
+
+      </div>
+
+
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

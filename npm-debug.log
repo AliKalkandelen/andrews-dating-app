@@ -1,0 +1,201 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'ios-simnpm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'ios-sim' ]
+2 info using npm@3.9.6
+3 info using node@v4.4.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData ios-simnpm
+8 silly fetchPackageMetaData install
+9 silly fetchPackageMetaData ios-sim
+10 silly fetchNamedPackageData ios-simnpm
+11 silly mapToRegistry name ios-simnpm
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: 'ios-simnpm',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   name: 'ios-simnpm',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/ios-simnpm
+16 silly fetchNamedPackageData install
+17 silly mapToRegistry name install
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'install',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   name: 'install',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri https://registry.npmjs.org/install
+22 silly fetchNamedPackageData ios-sim
+23 silly mapToRegistry name ios-sim
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'ios-sim',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'ios-sim',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/ios-sim
+28 verbose request uri https://registry.npmjs.org/ios-simnpm
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 11:42:12 PM
+31 verbose request id 034fa24b084294ba
+32 http request GET https://registry.npmjs.org/ios-simnpm
+33 verbose request uri https://registry.npmjs.org/install
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 11:42:12 PM
+36 http request GET https://registry.npmjs.org/install
+37 verbose request uri https://registry.npmjs.org/ios-sim
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 11:42:12 PM
+40 verbose etag "40T4Q8K92RYWIMZ5K5NVSZV3A"
+41 http request GET https://registry.npmjs.org/ios-sim
+42 http 200 https://registry.npmjs.org/install
+43 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+43 verbose headers   etag: '"E87BRBJ2V5AH8OYGJUM1D011K"',
+43 verbose headers   'content-type': 'application/json',
+43 verbose headers   'content-encoding': 'gzip',
+43 verbose headers   'cache-control': 'max-age=300',
+43 verbose headers   'content-length': '7498',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   date: 'Thu, 30 Jun 2016 03:42:12 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   age: '89',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-jfk1024-JFK',
+43 verbose headers   'x-cache': 'HIT',
+43 verbose headers   'x-cache-hits': '1',
+43 verbose headers   'x-timer': 'S1467258132.639183,VS0,VE0',
+43 verbose headers   vary: 'Accept-Encoding' }
+44 silly get cb [ 200,
+44 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+44 silly get     etag: '"E87BRBJ2V5AH8OYGJUM1D011K"',
+44 silly get     'content-type': 'application/json',
+44 silly get     'content-encoding': 'gzip',
+44 silly get     'cache-control': 'max-age=300',
+44 silly get     'content-length': '7498',
+44 silly get     'accept-ranges': 'bytes',
+44 silly get     date: 'Thu, 30 Jun 2016 03:42:12 GMT',
+44 silly get     via: '1.1 varnish',
+44 silly get     age: '89',
+44 silly get     connection: 'keep-alive',
+44 silly get     'x-served-by': 'cache-jfk1024-JFK',
+44 silly get     'x-cache': 'HIT',
+44 silly get     'x-cache-hits': '1',
+44 silly get     'x-timer': 'S1467258132.639183,VS0,VE0',
+44 silly get     vary: 'Accept-Encoding' } ]
+45 verbose get saving install to /Users/andy/.npm/registry.npmjs.org/install/.cache.json
+46 verbose correctMkdir /Users/andy/.npm correctMkdir not in flight; initializing
+47 http 304 https://registry.npmjs.org/ios-sim
+48 verbose headers { date: 'Thu, 30 Jun 2016 03:42:12 GMT',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   'cache-control': 'max-age=300',
+48 verbose headers   etag: '"40T4Q8K92RYWIMZ5K5NVSZV3A"',
+48 verbose headers   age: '0',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'x-served-by': 'cache-jfk1045-JFK',
+48 verbose headers   'x-cache': 'MISS',
+48 verbose headers   'x-cache-hits': '0',
+48 verbose headers   'x-timer': 'S1467258132.638586,VS0,VE20',
+48 verbose headers   vary: 'Accept-Encoding' }
+49 silly get cb [ 304,
+49 silly get   { date: 'Thu, 30 Jun 2016 03:42:12 GMT',
+49 silly get     via: '1.1 varnish',
+49 silly get     'cache-control': 'max-age=300',
+49 silly get     etag: '"40T4Q8K92RYWIMZ5K5NVSZV3A"',
+49 silly get     age: '0',
+49 silly get     connection: 'keep-alive',
+49 silly get     'x-served-by': 'cache-jfk1045-JFK',
+49 silly get     'x-cache': 'MISS',
+49 silly get     'x-cache-hits': '0',
+49 silly get     'x-timer': 'S1467258132.638586,VS0,VE20',
+49 silly get     vary: 'Accept-Encoding' } ]
+50 verbose etag https://registry.npmjs.org/ios-sim from cache
+51 verbose get saving ios-sim to /Users/andy/.npm/registry.npmjs.org/ios-sim/.cache.json
+52 verbose correctMkdir /Users/andy/.npm correctMkdir not in flight; initializing
+53 http 404 https://registry.npmjs.org/ios-simnpm
+54 verbose headers { 'content-type': 'application/json',
+54 verbose headers   'cache-control': 'max-age=0',
+54 verbose headers   'content-length': '2',
+54 verbose headers   'accept-ranges': 'bytes',
+54 verbose headers   date: 'Thu, 30 Jun 2016 03:42:12 GMT',
+54 verbose headers   via: '1.1 varnish',
+54 verbose headers   age: '0',
+54 verbose headers   connection: 'keep-alive',
+54 verbose headers   'x-served-by': 'cache-jfk1022-JFK',
+54 verbose headers   'x-cache': 'MISS',
+54 verbose headers   'x-cache-hits': '0',
+54 verbose headers   'x-timer': 'S1467258132.643185,VS0,VE104',
+54 verbose headers   vary: 'Accept-Encoding' }
+55 silly get cb [ 404,
+55 silly get   { 'content-type': 'application/json',
+55 silly get     'cache-control': 'max-age=0',
+55 silly get     'content-length': '2',
+55 silly get     'accept-ranges': 'bytes',
+55 silly get     date: 'Thu, 30 Jun 2016 03:42:12 GMT',
+55 silly get     via: '1.1 varnish',
+55 silly get     age: '0',
+55 silly get     connection: 'keep-alive',
+55 silly get     'x-served-by': 'cache-jfk1022-JFK',
+55 silly get     'x-cache': 'MISS',
+55 silly get     'x-cache-hits': '0',
+55 silly get     'x-timer': 'S1467258132.643185,VS0,VE104',
+55 silly get     vary: 'Accept-Encoding' } ]
+56 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/ios-simnpm
+56 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+56 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+56 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+56 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+56 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+56 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+56 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+56 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+56 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+56 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+56 silly fetchPackageMetaData  error for ios-simnpm { [Error: Registry returned 404 for GET on https://registry.npmjs.org/ios-simnpm] pkgid: 'ios-simnpm', statusCode: 404, code: 'E404' }
+57 silly rollbackFailedOptional Starting
+58 silly rollbackFailedOptional Finishing
+59 silly runTopLevelLifecycles Starting
+60 silly runTopLevelLifecycles Finishing
+61 silly install printInstalled
+62 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/ios-simnpm
+62 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+62 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+62 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+62 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+62 verbose stack     at emitTwo (events.js:87:13)
+62 verbose stack     at Request.emit (events.js:172:7)
+62 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+62 verbose stack     at emitOne (events.js:82:20)
+62 verbose stack     at Request.emit (events.js:169:7)
+62 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+63 verbose statusCode 404
+64 verbose pkgid ios-simnpm
+65 verbose cwd /website/html/phoneGap
+66 error Darwin 15.5.0
+67 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "ios-simnpm" "install" "-g" "ios-sim"
+68 error node v4.4.1
+69 error npm  v3.9.6
+70 error code E404
+71 error 404 Registry returned 404 for GET on https://registry.npmjs.org/ios-simnpm
+72 error 404
+73 error 404 'ios-simnpm' is not in the npm registry.
+74 error 404 You should bug the author to publish it (or use the name yourself!)
+75 error 404 Note that you can also install from a
+76 error 404 tarball, folder, http url, or git url.
+77 verbose exit [ 1, true ]
